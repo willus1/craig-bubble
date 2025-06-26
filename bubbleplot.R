@@ -40,6 +40,7 @@ p <- ggplot(pcm, aes(x = Sample, y = variable)) +
     range = c(3, 16),
     breaks = pretty_breaks(4)
   ) +
+  coord_cartesian(ylim=c(-1,29.5)) +
   scale_fill_manual(values = sample_colours, guide = "none") +
   labs(x = NULL, y = NULL) +
   theme_minimal(base_size = 13) +
